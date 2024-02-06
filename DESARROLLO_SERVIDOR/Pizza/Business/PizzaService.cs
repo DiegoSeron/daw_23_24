@@ -18,10 +18,10 @@ namespace PizzaExample.Business
         public  List<Pizza> GetAll()
         {
             var pizzas = _pizzaRepository.GetAll();
-            foreach (var pizza in pizzas)
-            {
-                pizza.Ingredientes = _ingredientesRepository.GetIngredientesByPizzaId(pizza.Id);
-            }
+            // foreach (var pizza in pizzas)
+            // {
+            //     pizza.Ingredientes = _ingredientesRepository.GetIngredientesByPizzaId(pizza.Id);
+            // }
             return _pizzaRepository.GetAll();
         }
 
@@ -29,10 +29,10 @@ namespace PizzaExample.Business
         {
             var pizza = _pizzaRepository.Get(id);
 
-            if (pizza != null)
-            {
-                pizza.Ingredientes = _ingredientesRepository.GetIngredientesByPizzaId(pizza.Id);
-            }
+            // if (pizza != null)
+            // {
+            //     pizza.Ingredientes = _ingredientesRepository.GetIngredientesByPizzaId(pizza.Id);
+            // }
 
             return pizza;
         }
@@ -42,17 +42,17 @@ namespace PizzaExample.Business
     {
         _pizzaRepository.Add(pizza);
 
-            foreach (var ingrediente in pizza.Ingredientes)
-            {
-                _ingredientesRepository.AddIngredienteToPizza(ingrediente, pizza.Id);
-            }
+            // foreach (var ingrediente in pizza.Ingredientes)
+            // {
+            //     _ingredientesRepository.AddIngredienteToPizza(ingrediente, pizza.Id);
+            // }
     }
 
     public  void Update(Pizza pizza)
     {
         _pizzaRepository.Update(pizza);
 
-            _ingredientesRepository.UpdateIngredientesForPizza(pizza.Ingredientes, pizza.Id);
+            // _ingredientesRepository.UpdateIngredientesForPizza(pizza.Ingredientes, pizza.Id);
     }
 
     public  void Delete(int id)
