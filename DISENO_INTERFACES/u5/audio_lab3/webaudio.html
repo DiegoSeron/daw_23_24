@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf ‐8">
+    <title> Hello web audio </title>
+</head>
+<body>
+    <script>
+        var audioCtx = new (window.AudioContext || window.webkitAudioContext)
+        var volume = audioCtx.createGain();
+        volume.connect(audioCtx.destination);
+        var sine = audioCtx.createOscillator();
+        sine.start();
+        sine.connect(volume);
+
+        document.querySelector('button').addEventListener('click', function() {
+
+            audioCtx.resume().then(() => {
+            console.log('Playback resumido! :)');
+            });
+            });
+        document.querySelector('button').addEventListener('click', function() {
+
+            audioCtx.close().then(() =>{
+            console.log('Playback parado! :)');
+            });
+            });
+    </script>
+    <button>Start</button>
+    <button>Stop</button>
+</body>
+<script>
+</script>
+
+</html>

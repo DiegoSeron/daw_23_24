@@ -1,0 +1,34 @@
+$backgroundColor: #FF4500;
+$color1 : #00FFFF;
+$size2em : 2em;
+
+.foo {
+    background: $backgroundColor;
+
+
+    p {
+        color: $color1;
+
+        font: {
+            size: 14px;
+            weight: bold;
+        }
+    }
+
+    font: {
+        family: arial;
+        weight: bold;
+        size: $size2em;
+    }
+
+}
+
+a {
+    color: $color1;
+    text-decoration: none;
+    font-size: $size2em;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

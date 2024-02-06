@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tone.js Membrane Synth</h1>
+    <p>Click to play</p>
+</body>
+<script type="module">
+    import * as Tone from 'tone'
+
+    require(["Tone"],function () {
+  // Membrane Synth https://tonejs.github.io/docs/r12/MembraneSynth
+  const synth = new Tone.MembraneSynth().toMaster();
+  function playSynth() {
+    synth.triggerAttackRelease("C2", "8n");
+  }
+
+  /**
+   * Play Controls
+   */
+  document.querySelector("body").addEventListener("click", function () {
+    playSynth();
+  });
+})();
+</script>
+</html>
+
+
+
+<style>
+    body {
+        background: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        cursor: pointer;
+    }
+</style>

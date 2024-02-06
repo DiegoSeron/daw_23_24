@@ -1,0 +1,82 @@
+using System.Text.Json;
+using System.Data.SqlClient;
+using PizzaExample.Models;
+using System.Data;
+
+namespace PizzaExample.Data
+{
+    public class PizzaRepositorySql : IPizzaRepository
+    {
+
+        private  List<Pizza> Pizzas { get; set; }
+        private readonly string _connectionString;
+
+        public PizzaRepositorySql(string connectionString)
+        {
+            _connectionString = connectionString;
+        }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        public  List<Pizza> GetAll()
+        {
+            return Pizzas;
+        }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        public void Add(Pizza pizza)
+        {
+           //INSERT INTO SQL STRING
+        }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        public Pizza Get(int id)
+        {
+            var pizza = new Pizza();
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                var sqlString = "SELECT name, isGlutenFree FROM pizza WHERE idPizza=" + id;
+                var command = new SqlCommand(sqlString, connection);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        pizza = new Pizza
+                        {
+                            Id = Convert.ToInt32(reader["idPizza"]),
+                            Name = reader["name"].ToString(),
+                            IsGlutenFree = Convert.ToBoolean(reader["isGlutenFree"])
+                            //Balance = (decimal)reader[2]
+                        };
+                    }
+                }
+                
+            }
+
+            return pizza;
+        }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        public void Update(Pizza pizza)
+        {
+            //UPDATE SQL STRING
+        }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        public void Delete(int id)
+        {
+            //UPDATE SQL STRING
+        }
+
+       
+
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="150"></canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle="orange";
+
+        //cara
+        ctx.beginPath();
+        ctx.arc(100, 100, 50, 0, 2 * Math.PI);    //(x, y, start-angle, end-angle)
+        ctx.fill();
+
+        //ojos
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(84, 90, 7, 0, 2 * Math.PI);    //(x, y, start-angle, end-angle)
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(116, 90, 7, 0, 2 * Math.PI);    //(x, y, start-angle, end-angle)
+        ctx.fill();
+
+        //boca
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(100, 100, 60, 0, Math.PI);    //(x, y, start-angle, end-angle)
+        ctx.fill();
+    </script>
+</body>
+</html>

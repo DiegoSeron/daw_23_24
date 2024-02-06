@@ -1,0 +1,27 @@
+Añadir medición al bloque de key benefits.
+
+Enviar evento a GA4 que envíe:
+nombre evento: keybenefits
+titulo: el título del kb clicado
+descripcion: la descripción del elemento clicado
+----------------------------------------------------------------------------------------------
+
+document.querySelectorAll('.services').forEach(function(elemento) {
+    elemento.addEventListener('click', function() {
+
+      var titulo = elemento.querySelector('.heading').textContent;
+      var descripcion = elemento.querySelector('.heading + span').textContent;
+
+      console.log(titulo);
+      console.log(descripcion);
+
+      gtag('event', 'keybenefits', {
+        titulo: titulo,
+        descripcion: descripcion
+      });
+    });
+  });
+
+
+
+

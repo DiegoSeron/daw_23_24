@@ -1,0 +1,82 @@
+CREATE DATABASE PizzaDB
+USE PizzaDB
+CREATE TABLE PIZZA(
+idPizza INT IDENTITY(1,1) PRIMARY KEY,
+name NVARCHAR(500) NOT null,
+isGlutenFree bit NOT null
+);
+
+DROP TABLE PIZZA
+ SELECT * FROM pizza
+
+-- Insertar una pizza con gluten
+INSERT INTO PIZZA (name, isGlutenFree)
+VALUES ('Pizza Margarita', 0);
+
+-- Insertar otra pizza sin gluten
+INSERT INTO PIZZA (name, isGlutenFree)
+VALUES ('Pizza Vegana', 1);
+
+-- Insertar otra pizza con gluten
+INSERT INTO PIZZA (name, isGlutenFree)
+VALUES ('Pizza Pepperoni', 0);
+
+-- Insertar otra pizza sin gluten
+INSERT INTO PIZZA (name, isGlutenFree)
+VALUES ('Pizza Hawaiana', 1);
+
+---------------------------------------------
+
+CREATE DATABASE bankapp
+USE bankapp
+CREATE TABLE BankAccounts (
+    Number NVARCHAR(50) PRIMARY KEY,
+    Owner NVARCHAR(100) NOT NULL,
+    Balance DECIMAL(18, 2) NOT NULL
+);
+
+CREATE TABLE Transactions (
+    TransactionId INT IDENTITY(1,1) PRIMARY KEY,
+    Amount DECIMAL(18, 2) NOT NULL,
+    Date DATETIME NOT NULL,
+    Note NVARCHAR(500),
+    AccountNumber NVARCHAR(50) NOT NULL,
+    CONSTRAINT FK_Transactions_BankAccounts FOREIGN KEY (AccountNumber) REFERENCES BankAccounts(Number)
+);
+
+
+-- Insertar una cuenta bancaria con valores específicos
+INSERT INTO BankAccounts (Number, Owner, Balance)
+VALUES ('1234567890', 'Juan Pérez', 5000.00);
+bankapp
+-- Insertar otra cuenta bancaria con valores específicos
+INSERT INTO BankAccounts (Number, Owner, Balance)
+VALUES ('9876543211', 'María Rodríguez', 7500.50);
+
+
+-- Insertar una transacción para la cuenta '1234567890'
+INSERT INTO Transactions (Amount, Date, Note, AccountNumber)
+VALUES (1000.00, GETDATE(), 'Compra en tienda A', '1234567890');
+
+-- Insertar otra transacción para la cuenta '1234567890'
+INSERT INTO Transactions (Amount, Date, Note, AccountNumber)
+VALUES (-300.50, GETDATE(), 'Retiro en cajero automático', '1234567890');
+
+-- Insertar una transacción para la cuenta '9876543210'
+INSERT INTO Transactions (Amount, Date, Note, AccountNumber)
+VALUES (1500.75, GETDATE(), 'Depósito en cheque', '9876543210');
+
+-- Insertar otra transacción para la cuenta '9876543210'
+INSERT INTO Transactions (Amount, Date, Note, AccountNumber)
+VALUES (-800.00, GETDATE(), 'Transferencia a cuenta externa', '9876543210');
+
+
+SELECT * FROM transactions
+
+DROP table bankaccount
+
+DELETE FROM bankAccounts
+WHERE Number = '9876543210';
+
+
+

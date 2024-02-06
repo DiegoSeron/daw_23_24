@@ -1,0 +1,36 @@
+D:\W6_BankApp_4-layer_architecture\Models\bin\Debug\net6.0\BankApp.Models.deps.json
+D:\W6_BankApp_4-layer_architecture\Models\bin\Debug\net6.0\BankApp.Models.dll
+D:\W6_BankApp_4-layer_architecture\Models\bin\Debug\net6.0\BankApp.Models.pdb
+D:\W6_BankApp_4-layer_architecture\Models\obj\Debug\net6.0\BankApp.Models.csproj.AssemblyReference.cache
+D:\W6_BankApp_4-layer_architecture\Models\obj\Debug\net6.0\BankApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\W6_BankApp_4-layer_architecture\Models\obj\Debug\net6.0\BankApp.Models.AssemblyInfoInputs.cache
+D:\W6_BankApp_4-layer_architecture\Models\obj\Debug\net6.0\BankApp.Models.AssemblyInfo.cs
+D:\W6_BankApp_4-layer_architecture\Models\obj\Debug\net6.0\BankApp.Models.csproj.CoreCompileInputs.cache
+D:\W6_BankApp_4-layer_architecture\Models\obj\Debug\net6.0\BankApp.Models.dll
+D:\W6_BankApp_4-layer_architecture\Models\obj\Debug\net6.0\refint\BankApp.Models.dll
+D:\W6_BankApp_4-layer_architecture\Models\obj\Debug\net6.0\BankApp.Models.pdb
+D:\W6_BankApp_4-layer_architecture\Models\obj\Debug\net6.0\ref\BankApp.Models.dll
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\bin\Debug\net6.0\BankApp.Models.deps.json
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\bin\Debug\net6.0\BankApp.Models.dll
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\bin\Debug\net6.0\BankApp.Models.pdb
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.csproj.AssemblyReference.cache
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.AssemblyInfoInputs.cache
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.AssemblyInfo.cs
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.csproj.CoreCompileInputs.cache
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.dll
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\refint\BankApp.Models.dll
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.pdb
+D:\Diego Seron\git\DESARROLLO WEB EN ENTORNO SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\ref\BankApp.Models.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\bin\Debug\net6.0\BankApp.Models.deps.json
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\bin\Debug\net6.0\BankApp.Models.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\bin\Debug\net6.0\BankApp.Models.pdb
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.csproj.AssemblyReference.cache
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.AssemblyInfoInputs.cache
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.AssemblyInfo.cs
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.csproj.CoreCompileInputs.cache
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\refint\BankApp.Models.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\BankApp.Models.pdb
+D:\Diego Seron\DESARROLLO_SERVIDOR\BankApp_ADO.NET\Models\obj\Debug\net6.0\ref\BankApp.Models.dll

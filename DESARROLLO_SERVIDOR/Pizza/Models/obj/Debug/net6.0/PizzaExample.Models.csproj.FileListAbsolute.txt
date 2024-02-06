@@ -1,0 +1,12 @@
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\bin\Debug\net6.0\PizzaExample.Models.deps.json
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\bin\Debug\net6.0\PizzaExample.Models.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\bin\Debug\net6.0\PizzaExample.Models.pdb
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\obj\Debug\net6.0\PizzaExample.Models.csproj.AssemblyReference.cache
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\obj\Debug\net6.0\PizzaExample.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\obj\Debug\net6.0\PizzaExample.Models.AssemblyInfoInputs.cache
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\obj\Debug\net6.0\PizzaExample.Models.AssemblyInfo.cs
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\obj\Debug\net6.0\PizzaExample.Models.csproj.CoreCompileInputs.cache
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\obj\Debug\net6.0\PizzaExample.Models.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\obj\Debug\net6.0\refint\PizzaExample.Models.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\obj\Debug\net6.0\PizzaExample.Models.pdb
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Models\obj\Debug\net6.0\ref\PizzaExample.Models.dll

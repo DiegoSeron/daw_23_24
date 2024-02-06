@@ -1,0 +1,17 @@
+.container {
+    column-width: 250px;
+    column-gap: 25px;
+    max-width: 800px;
+  }
+  
+  .target {
+    font: 26px 'Berkshire Swash', cursive;
+    border: 5px solid #ccc;
+    padding: 0 20px;
+    break-inside: avoid;
+    
+    break-after: avoid;
+  }
+
+
+ 

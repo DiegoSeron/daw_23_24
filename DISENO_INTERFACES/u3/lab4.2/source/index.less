@@ -1,0 +1,40 @@
+@backgroundColor: #FF4500;
+@color1 : #00FFFF;
+@size2em : 2em;
+
+.mixin-font(@size, @weight, @family){
+    & when not (@size = null){
+        font-size:@size;   
+    }
+    & when not (@weight = null){
+        font-weight:@weight;   
+    }
+    & when not (@family = null){
+        font-family:@family;   
+    }
+}
+
+
+
+.foo {
+    background: @backgroundColor;
+
+
+    p {
+        color: @color1;
+        .mixin-font(14px, bold, null);
+    }
+
+    .mixin-font(@size2em, bold, arial);
+
+}
+
+a {
+    color: @color1;
+    text-decoration: none;
+    .mixin-font(@size2em, null, null);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

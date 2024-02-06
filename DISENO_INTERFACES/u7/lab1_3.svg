@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	viewBox="-150 -150 300 300">
+	<circle cx="0" cy="0" r="50" style="stroke:#ffffff; fill=#ffffff" />
+	<g>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(0deg))"/>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(30deg))"/>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(60deg))"/>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(90deg))"/>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(120deg))"/>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(150deg))"/>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(180deg))"/>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(210deg))"/>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(240deg))"/>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(270deg))"/>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(300deg))"/>
+		<line x1="0" y1="-45" x2="0" y2="-47" style="stroke:#ffffff; transform:rotate(calc(330deg))"/>
+	</g>
+	<line class="hour" x1="0" y1="0" x2="0" y2="-20" style="stroke:#ffffff;  transform:rotate(calc(11*30deg))"/>
+	<line class="minute" x1="0" y1="0" x2="0" y2="-30" style="stroke:#ffffff;  transform:rotate(calc(4*6deg))"/>
+	<line class="second" x1="0" y1="0" x2="0" y2="-40" style="stroke:#ffffff; stroke-width:0.5;  transform:rotate(calc(38*6deg))"/>
+</svg>

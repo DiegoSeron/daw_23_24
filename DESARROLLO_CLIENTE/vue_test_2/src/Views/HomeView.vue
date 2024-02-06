@@ -1,0 +1,3 @@
+<template>
+    Vista Home
+</template>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas">
+
+    </canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        /////RECTANGLE//////
+        //ctx.fillStyle = "#FF0000";
+        //ctx.fillRect(0, 0, 150, 75);
+        ////////////////////
+
+        /////LINE///////////
+        //ctx.moveTo(0, 0);
+        //ctx.lineTo(200, 100);
+        //ctx.stroke();
+        ////////////////////
+
+        /////CIRCULO////////
+        //ctx.beginPath();
+        //ctx.arc(95, 50, 40, 0, 2 * Math.PI);    //(x, y, start-angle, end-angle)
+        //ctx.stroke();
+        ////////////////////
+
+        /////GRADIENTE//////
+        //var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        //grd.addColorStop(0, "red");
+        //grd.addColorStop(1, "white");
+        //ctx.fillStyle = grd;
+        //ctx.fillRect(10, 10, 150, 80);
+        ////////////////////
+
+        /////TEXTO//////
+        ctx.font = "30px Arial";
+        ctx.fillText = ("Hello World", 10, 50);
+        ////////////////////
+
+        /////IMAGENES//////////
+        //var img = document.getElementById("image");
+        //ctx.drawImage(img, 10, 10);
+        ////////////////////
+    </script>
+</body>
+
+</html>

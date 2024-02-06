@@ -1,0 +1,15 @@
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\bin\Debug\net6.0\PizzaExample.Business.deps.json
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\bin\Debug\net6.0\PizzaExample.Business.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\bin\Debug\net6.0\PizzaExample.Business.pdb
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\bin\Debug\net6.0\PizzaExample.Data.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\bin\Debug\net6.0\PizzaExample.Models.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\bin\Debug\net6.0\PizzaExample.Models.pdb
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\bin\Debug\net6.0\PizzaExample.Data.pdb
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\obj\Debug\net6.0\PizzaExample.Business.csproj.AssemblyReference.cache
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\obj\Debug\net6.0\PizzaExample.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\obj\Debug\net6.0\PizzaExample.Business.csproj.CoreCompileInputs.cache
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\obj\Debug\net6.0\PizzaExample.Business.csproj.CopyComplete
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\obj\Debug\net6.0\PizzaExample.Business.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\obj\Debug\net6.0\refint\PizzaExample.Business.dll
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\obj\Debug\net6.0\PizzaExample.Business.pdb
+D:\Diego Seron\DESARROLLO_SERVIDOR\Pizza\Business\obj\Debug\net6.0\ref\PizzaExample.Business.dll
