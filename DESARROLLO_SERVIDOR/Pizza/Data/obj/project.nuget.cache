@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DPF0tycUMwfM6UUq6NDMv9zso0y+SJMp+KOqqZfNRwwNNy5IM92LxprxrEnODD6zPGsNRr61vIlrpRpHY9j1vQ==",
+  "dgSpecHash": "dm9TfQZQAu+9TxTZfsPJvO1QwAOY5a2vuG19p0NnZWpaxv1s9NXQ+sQzDlk0Qr1rEJL828No4Vjr4UMT6cmGdQ==",
   "success": true,
-  "projectFilePath": "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj",
+  "projectFilePath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\S2-PC00\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\S2-PC00\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

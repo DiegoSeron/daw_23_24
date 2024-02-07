@@ -2,97 +2,199 @@
   {
     "Number": "1",
     "Owner": "Alex",
-    "Balance": 4500,
+    "Balance": 6000,
     "transactions": [
       {
+        "TransactionId": 0,
         "Amount": 1000,
         "Date": "2023-11-22T17:13:15.6275305+01:00",
-        "Note": "Propina"
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": -500,
         "Date": "2023-11-22T17:13:15.6359365+01:00",
-        "Note": "Pago"
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": 1000,
         "Date": "2023-11-22T17:17:56.5899269+01:00",
-        "Note": "Propina"
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": -500,
         "Date": "2023-11-22T17:17:56.5955578+01:00",
-        "Note": "Pago"
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": 1000,
         "Date": "2024-01-10T17:01:15.2745771+01:00",
-        "Note": "Propina"
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": -500,
         "Date": "2024-01-10T17:01:15.2818834+01:00",
-        "Note": "Pago"
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": 1000,
         "Date": "2024-01-10T17:01:52.7501045+01:00",
-        "Note": "Propina"
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": -500,
         "Date": "2024-01-10T17:01:52.7551854+01:00",
-        "Note": "Pago"
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": 1000,
         "Date": "2024-01-10T17:02:10.8410229+01:00",
-        "Note": "Propina"
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": -500,
         "Date": "2024-01-10T17:02:10.8462364+01:00",
-        "Note": "Pago"
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": 1000,
         "Date": "2024-01-10T17:02:34.9872381+01:00",
-        "Note": "Propina"
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": -500,
         "Date": "2024-01-10T17:02:34.9930618+01:00",
-        "Note": "Pago"
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": 1000,
         "Date": "2024-01-24T16:53:33.927169+01:00",
-        "Note": "Propina"
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": -500,
         "Date": "2024-01-24T16:53:33.9341381+01:00",
-        "Note": "Pago"
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": 1000,
         "Date": "2024-01-24T18:45:12.7330933+01:00",
-        "Note": "Propina"
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": -500,
         "Date": "2024-01-24T18:45:12.7389768+01:00",
-        "Note": "Pago"
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": 1000,
         "Date": "2024-01-31T18:21:44.0307077+01:00",
-        "Note": "Propina"
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
       },
       {
+        "TransactionId": 0,
         "Amount": -500,
         "Date": "2024-01-31T18:21:44.0373502+01:00",
-        "Note": "Pago"
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
+      },
+      {
+        "TransactionId": 0,
+        "Amount": 1000,
+        "Date": "2024-02-07T18:30:10.0690456+01:00",
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
+      },
+      {
+        "TransactionId": 0,
+        "Amount": -500,
+        "Date": "2024-02-07T18:30:10.0752168+01:00",
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
+      },
+      {
+        "TransactionId": 0,
+        "Amount": 1000,
+        "Date": "2024-02-07T18:30:49.6020062+01:00",
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
+      },
+      {
+        "TransactionId": 0,
+        "Amount": -500,
+        "Date": "2024-02-07T18:30:49.6080032+01:00",
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
+      },
+      {
+        "TransactionId": 0,
+        "Amount": 1000,
+        "Date": "2024-02-07T18:30:58.499936+01:00",
+        "Note": "Propina",
+        "BankAccountId": null,
+        "BankAccount": null
+      },
+      {
+        "TransactionId": 0,
+        "Amount": -500,
+        "Date": "2024-02-07T18:30:58.5071201+01:00",
+        "Note": "Pago",
+        "BankAccountId": null,
+        "BankAccount": null
       }
     ]
   }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj",
+      "projectUniqueName": "d:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj",
       "projectName": "PizzaExample.Models",
-      "projectPath": "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj",
+      "projectPath": "d:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj",
       "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-      "outputPath": "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\obj\\",
+      "outputPath": "d:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

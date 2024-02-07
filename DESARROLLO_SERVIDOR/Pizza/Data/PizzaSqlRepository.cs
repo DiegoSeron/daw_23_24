@@ -17,9 +17,9 @@ namespace PizzaExample.Data
             _connectionString = connectionString;
         }
 
-        public  List<Pizza> GetAll()
+        public List<Pizza> GetAll()
         {
-           List<Pizza> pizzas  = new List<Pizza>();
+            List<Pizza> pizzas = new List<Pizza>();
 
             using (var connection = new SqlConnection(_connectionString))
             {
@@ -39,8 +39,8 @@ namespace PizzaExample.Data
                             Name = reader["name"].ToString(),
                             IsGlutenFree = Convert.ToBoolean(reader["isGlutenFree"])
                         };
-                    pizzas.Add(pizza);
-                    } 
+                        pizzas.Add(pizza);
+                    }
                 }
             }
 
@@ -50,17 +50,20 @@ namespace PizzaExample.Data
         public void Add(Pizza pizza)
         {
             using (var connection = new SqlConnection(_connectionString))
-    {
-        connection.Open();
 
-        var sqlString = "INSERT INTO PIZZA (name, isGlutenFree) VALUES('@Name', @IsGlutenFree)";
-        var command = new SqlCommand(sqlString, connection);
+            {
+                connection.Open();
 
-        // Utilizamos parámetros para evitar la inyección de SQL
-        command.Parameters.AddWithValue("@Name", pizza.Name);
-        command.Parameters.AddWithValue("@IsGlutenFree", pizza.IsGlutenFree);
+                var sqlString = "INSERT INTO PIZZA (Name, IsGlutenFree) VALUES (@Name, @IsGlutenFree)";
+                var command = new SqlCommand(sqlString, connection);
 
-    }
+                command.Parameters.AddWithValue("@Name", pizza.Name);
+                command.Parameters.AddWithValue("@IsGlutenFree", pizza.IsGlutenFree);
+
+                command.ExecuteNonQuery();
+
+            }
+
         }
 
         public Pizza Get(int id)
@@ -93,45 +96,45 @@ namespace PizzaExample.Data
         }
 
         public void Update(Pizza pizza)
-{
-    /* using (var connection = new SqlConnection(_connectionString))
-    {
-        connection.Open();
-
-        var sqlString = "UPDATE PIZZA SET name=@Name, isGlutenFree=@IsGlutenFree WHERE idPizza=@Id";
-        var command = new SqlCommand(sqlString, connection);
-
-        // Utilizamos parámetros para evitar la inyección de SQL
-        command.Parameters.AddWithValue("@Name", pizza.Name);
-        command.Parameters.AddWithValue("@IsGlutenFree", pizza.IsGlutenFree);
-        command.Parameters.AddWithValue("@Id", pizza.Id);
-
-        // Ejecutamos la consulta de actualización
-        int rowsAffected = command.ExecuteNonQuery();
-
-        // Puedes verificar rowsAffected para ver cuántas filas fueron afectadas
-        if (rowsAffected > 0)
         {
-            Console.WriteLine("La pizza fue actualizada exitosamente.");
+            /* using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                var sqlString = "UPDATE PIZZA SET name=@Name, isGlutenFree=@IsGlutenFree WHERE idPizza=@Id";
+                var command = new SqlCommand(sqlString, connection);
+
+                // Utilizamos parámetros para evitar la inyección de SQL
+                command.Parameters.AddWithValue("@Name", pizza.Name);
+                command.Parameters.AddWithValue("@IsGlutenFree", pizza.IsGlutenFree);
+                command.Parameters.AddWithValue("@Id", pizza.Id);
+
+                // Ejecutamos la consulta de actualización
+                int rowsAffected = command.ExecuteNonQuery();
+
+                // Puedes verificar rowsAffected para ver cuántas filas fueron afectadas
+                if (rowsAffected > 0)
+                {
+                    Console.WriteLine("La pizza fue actualizada exitosamente.");
+                }
+                else
+                {
+                    Console.WriteLine("No se pudo encontrar la pizza con el ID especificado.");
+                }
+            } */
         }
-        else
-        {
-            Console.WriteLine("No se pudo encontrar la pizza con el ID especificado.");
-        }
-    } */
-}
 
         public void Delete(int id)
         {
             using (var connection = new SqlConnection(_connectionString))
-    {
-        connection.Open();
+            {
+                connection.Open();
 
-        var sqlString = "DELETE FROM PIZZA WHERE idPizza=" + id;
-        var command = new SqlCommand(sqlString, connection);
+                var sqlString = "DELETE FROM PIZZA WHERE idPizza=" + id;
+                var command = new SqlCommand(sqlString, connection);
 
-        command.ExecuteNonQuery();
-    }
+                command.ExecuteNonQuery();
+            }
         }
 
         public void SaveChanges()

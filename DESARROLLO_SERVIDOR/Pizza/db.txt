@@ -1,29 +1,41 @@
 CREATE DATABASE PizzaDB
+
 USE PizzaDB
+
 CREATE TABLE PIZZA(
 idPizza INT IDENTITY(1,1) PRIMARY KEY,
 name NVARCHAR(500) NOT null,
 isGlutenFree bit NOT null
 );
 
-DROP TABLE PIZZA
- SELECT * FROM pizza
+CREATE TABLE INGREDIENTE(
+idIngrediente INT IDENTITY(1,1) PRIMARY KEY,
+name NVARCHAR(100) NOT null,
+origen NVARCHAR(100) NOT null,
+pizzaId INT NOT null,
+calorias INT NOT null,
+FOREIGN KEY (pizzaId) REFERENCES PIZZA(idPizza)
+);
 
--- Insertar una pizza con gluten
 INSERT INTO PIZZA (name, isGlutenFree)
 VALUES ('Pizza Margarita', 0);
-
--- Insertar otra pizza sin gluten
 INSERT INTO PIZZA (name, isGlutenFree)
 VALUES ('Pizza Vegana', 1);
-
--- Insertar otra pizza con gluten
 INSERT INTO PIZZA (name, isGlutenFree)
 VALUES ('Pizza Pepperoni', 0);
-
--- Insertar otra pizza sin gluten
 INSERT INTO PIZZA (name, isGlutenFree)
 VALUES ('Pizza Hawaiana', 1);
+
+INSERT INTO INGREDIENTE (name, origen, pizzaId, calorias) VALUES ('Queso', 'Leche de vaca', 1, 150);
+INSERT INTO INGREDIENTE (name, origen, pizzaId, calorias) VALUES ('Tomate', 'Orgánico', 1, 20);
+INSERT INTO INGREDIENTE (name, origen, pizzaId, calorias) VALUES ('Piña', 'Tropical', 4, 80);
+INSERT INTO INGREDIENTE (name, origen, pizzaId, calorias) VALUES ('Pepperoni', 'Carne de cerdo', 3, 200);
+
+
+DROP TABLE PIZZA
+
+SELECT * FROM pizza
+
 
 ---------------------------------------------
 

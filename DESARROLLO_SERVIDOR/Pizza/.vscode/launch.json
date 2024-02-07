@@ -1,26 +1,14 @@
 {
-    // Use IntelliSense to find out which attributes exist for C# debugging
-    // Use hover for the description of the existing attributes
-    // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "name": ".NET Core Launch (console)",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Presentation/bin/Debug/net6.0/PizzaExample.Presentation.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/Presentation",
-            "console": "internalConsole",
-            "stopAtEntry": false
-        },
         {
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            // If you have different target frameworks, specify the one you want to run
             "program": "${workspaceFolder}/API/bin/Debug/net6.0/PizzaExample.API.dll",
             "args": [],
             "cwd": "${workspaceFolder}/API",
@@ -31,13 +19,15 @@
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
             }
-        }
-    ],
-    "compounds": [
+        },
         {
-            "name": "Launch API and Console",
-            "configurations": [".NET Core Launch (console)", ".NET Core Launch (web)"]
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
         }
     ]
 }

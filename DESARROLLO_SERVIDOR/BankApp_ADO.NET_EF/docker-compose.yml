@@ -17,7 +17,7 @@ services:
             - backend
         volumes:
             - sqlserver-data:/var/opt/mssql #mounted volumen in Docker
-            - D:/sqlserver-data:/var/opt/mssql  #bind mounted in Windows
+            # - D:/sqlserver-data:/var/opt/mssql  #bind mounted in Windows
             #- ~/sqlserver-data:/var/opt/mssql  #bind mounted in Linux/Mac
         environment:    #more secure if you use an .env file
             - ACCEPT_EULA=Y

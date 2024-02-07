@@ -9,11 +9,11 @@ namespace PizzaExample.Business
     {
 
         private readonly IPizzaRepository _pizzaRepository;
-        private readonly IIngredientesRepository _ingredientesRepository;
+        
 
-        public PizzaService(IPizzaRepository pizzaRepository, IIngredientesRepository ingredientesRepository){
+        public PizzaService(IPizzaRepository pizzaRepository){
             _pizzaRepository = pizzaRepository;
-            _ingredientesRepository = ingredientesRepository;
+        
         }
         public  List<Pizza> GetAll()
         {
@@ -22,7 +22,7 @@ namespace PizzaExample.Business
             // {
             //     pizza.Ingredientes = _ingredientesRepository.GetIngredientesByPizzaId(pizza.Id);
             // }
-            return _pizzaRepository.GetAll();
+            return pizzas;
         }
 
         public  Pizza Get(int id)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\API\\PizzaExample.API.csproj": {}
+    "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\API\\PizzaExample.API.csproj": {}
   },
   "projects": {
-    "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\API\\PizzaExample.API.csproj": {
+    "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\API\\PizzaExample.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\API\\PizzaExample.API.csproj",
+        "projectUniqueName": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\API\\PizzaExample.API.csproj",
         "projectName": "PizzaExample.API",
-        "projectPath": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\API\\PizzaExample.API.csproj",
+        "projectPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\API\\PizzaExample.API.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\API\\obj\\",
+        "outputPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,14 +33,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\PizzaExample.Business.csproj": {
-                "projectPath": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\PizzaExample.Business.csproj"
+              "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\PizzaExample.Business.csproj": {
+                "projectPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\PizzaExample.Business.csproj"
               },
-              "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj": {
-                "projectPath": "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj"
+              "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj": {
+                "projectPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj"
               },
-              "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj": {
-                "projectPath": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj"
+              "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj": {
+                "projectPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj"
               }
             }
           }
@@ -55,6 +55,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -83,14 +89,14 @@
         }
       }
     },
-    "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\PizzaExample.Business.csproj": {
+    "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\PizzaExample.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\PizzaExample.Business.csproj",
+        "projectUniqueName": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\PizzaExample.Business.csproj",
         "projectName": "PizzaExample.Business",
-        "projectPath": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\PizzaExample.Business.csproj",
+        "projectPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\PizzaExample.Business.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\obj\\",
+        "outputPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -111,11 +117,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj": {
-                "projectPath": "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj"
+              "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj": {
+                "projectPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj"
               },
-              "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj": {
-                "projectPath": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj"
+              "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj": {
+                "projectPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj"
               }
             }
           }
@@ -149,14 +155,14 @@
         }
       }
     },
-    "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj": {
+    "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj",
+        "projectUniqueName": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj",
         "projectName": "PizzaExample.Data",
-        "projectPath": "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj",
+        "projectPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\PizzaExample.Data.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "d:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\obj\\",
+        "outputPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -177,8 +183,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj": {
-                "projectPath": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj"
+              "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj": {
+                "projectPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj"
               }
             }
           }
@@ -222,14 +228,14 @@
         }
       }
     },
-    "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj": {
+    "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj",
+        "projectUniqueName": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj",
         "projectName": "PizzaExample.Models",
-        "projectPath": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj",
+        "projectPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\PizzaExample.Models.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "D:\\Diego Seron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\obj\\",
+        "outputPath": "D:\\DiegoSeron\\DESARROLLO_SERVIDOR\\Pizza\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

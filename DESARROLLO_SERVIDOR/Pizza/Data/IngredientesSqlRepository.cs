@@ -27,7 +27,7 @@ namespace PizzaExample.Data
 
                 connection.Open();
 
-                var sqlString = "SELECT idPizza, name, isGlutenFree FROM PIZZA";
+                var sqlString = "SELECT idIngrediente, name, origen, pizzaId, calorias FROM INGREDIENTE";
                 var command = new SqlCommand(sqlString, connection);
 
                 using (var reader = command.ExecuteReader())
@@ -36,64 +36,72 @@ namespace PizzaExample.Data
                     {
                         var ingrediente = new Ingrediente
                         {
-                            Id = Convert.ToInt32(reader["idPizza"]),
+                            Id = Convert.ToInt32(reader["idIngrediente"]),
                             Name = reader["name"].ToString(),
-                            IsGlutenFree = Convert.ToBoolean(reader["isGlutenFree"])
+                            Origen = reader["origen"].ToString(),
+                            PizzaId = Convert.ToInt32(reader["pizzaId"]),
+                            Calorias = Convert.ToInt32(reader["calorias"])
                         };
                     ingredientes.Add(ingrediente);
                     } 
                 }
             }
 
-            return pizzas;
+            return ingredientes;
         }
 
-        public void Add(Pizza pizza)
+        public void Add(Ingrediente ingrediente)
         {
             using (var connection = new SqlConnection(_connectionString))
     {
         connection.Open();
 
-        var sqlString = "INSERT INTO PIZZA (name, isGlutenFree) VALUES('@Name', @IsGlutenFree)";
+        var sqlString = "INSERT INTO INGREDIENTE (name, origen, pizzaId, calorias) VALUES(@Name, @Origen, @PizzaId, @Calorias)";
         var command = new SqlCommand(sqlString, connection);
 
         // Utilizamos parámetros para evitar la inyección de SQL
-        command.Parameters.AddWithValue("@Name", pizza.Name);
-        command.Parameters.AddWithValue("@IsGlutenFree", pizza.IsGlutenFree);
+        command.Parameters.AddWithValue("@Name", ingrediente.Name);
+        command.Parameters.AddWithValue("@Origen", ingrediente.Origen);
+        command.Parameters.AddWithValue("@PizzaId", ingrediente.PizzaId);
+        command.Parameters.AddWithValue("@Calorias", ingrediente.Calorias);
+
+        command.ExecuteNonQuery();
 
     }
         }
 
-        public Pizza Get(int id)
+        public Ingrediente Get(int id)
         {
-            var pizza = new Pizza();
+            var ingrediente = new Ingrediente();
 
             using (var connection = new SqlConnection(_connectionString))
             {
 
                 connection.Open();
 
-                var sqlString = "SELECT idPizza, Name, IsGlutenFree FROM PIZZA WHERE idPizza=" + id;
+                var sqlString = "SELECT idIngrediente, name, origen, pizzaId, calorias FROM INGREDIENTE WHERE idIngrediente=" + id;
                 var command = new SqlCommand(sqlString, connection);
 
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        pizza = new Pizza
+                        ingrediente = new Ingrediente
                         {
-                            Id = Convert.ToInt32(reader["idPizza"]),
+                            Id = Convert.ToInt32(reader["idIngrediente"]),
                             Name = reader["name"].ToString(),
-                            IsGlutenFree = Convert.ToBoolean(reader["isGlutenFree"])
+                            Origen = reader["origen"].ToString(),
+                            PizzaId = Convert.ToInt32(reader["pizzaId"]),
+                            Calorias = Convert.ToInt32(reader["calorias"])
                         };
                     }
                 }
             }
 
-            return pizza;
+            return ingrediente;
         }
 
-        public void Update(Pizza pizza)
+        public void Update(Ingrediente ingrediente)
 {
     /* using (var connection = new SqlConnection(_connectionString))
     {
@@ -128,36 +136,36 @@ namespace PizzaExample.Data
     {
         connection.Open();
 
-        var sqlString = "DELETE FROM PIZZA WHERE idPizza=" + id;
+        var sqlString = "DELETE FROM INGREDIENTE WHERE idIngrediente=" + id;
         var command = new SqlCommand(sqlString, connection);
 
         command.ExecuteNonQuery();
     }
         }
-        public List<Ingrediente> GetIngredientesByPizzaId(int pizzaId)
-        {
-            // Puedes agregar lógica aquí para obtener los ingredientes asociados a una pizza específica
-            // Devuelve una lista de ingredientes relacionados con la pizzaId
-            return Ingredientes.Where(i => i.PizzaId == pizzaId).ToList();
-        }
+        // public List<Ingrediente> GetIngredientesByPizzaId(int pizzaId)
+        // {
+        //     // Puedes agregar lógica aquí para obtener los ingredientes asociados a una pizza específica
+        //     // Devuelve una lista de ingredientes relacionados con la pizzaId
+        //     return ingredientes.Where(i => i.PizzaId == pizzaId).ToList();
+        // }
 
         public void AddIngredienteToPizza(Ingrediente ingrediente, int pizzaId)
         {
             // Puedes agregar lógica aquí para asociar un ingrediente a una pizza específica
-            ingrediente.Id = nextId++;
-            ingrediente.PizzaId = pizzaId;
-            Ingredientes.Add(ingrediente);
+            // ingrediente.Id = nextId++;
+            // ingrediente.PizzaId = pizzaId;
+            // Ingredientes.Add(ingrediente);
         }
 
         public void UpdateIngredientesForPizza(List<Ingrediente> ingredientes, int pizzaId)
         {
             // Puedes agregar lógica aquí para actualizar la lista de ingredientes asociada a una pizza específica
             // Puedes borrar todos los ingredientes asociados a la pizza y luego agregar los nuevos
-            Ingredientes.RemoveAll(i => i.PizzaId == pizzaId);
-            foreach (var ingrediente in ingredientes)
-            {
-                AddIngredienteToPizza(ingrediente, pizzaId);
-            }
+            // Ingredientes.RemoveAll(i => i.PizzaId == pizzaId);
+            // foreach (var ingrediente in ingredientes)
+            // {
+            //     AddIngredienteToPizza(ingrediente, pizzaId);
+            // }
         }
 
 
