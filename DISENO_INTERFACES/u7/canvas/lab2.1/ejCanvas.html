@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="300" height="200"></canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "orange";
+
+        //cara
+        ctx.strokeStyle = "black"
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        //ojos
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.arc(84, 80, 7, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(116, 80, 7, 0, 2 * Math.PI);
+        ctx.fill();
+
+        //boca
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.arc(100, 105, 30, 0, Math.PI);
+        ctx.stroke();
+
+        //texto
+        ctx.fillStyle = "black";
+        ctx.font = "16px Bebas Neue";
+        ctx.fillText("Hola Clase!!", 160, 80);
+    </script>
+</body>
+
+</html>

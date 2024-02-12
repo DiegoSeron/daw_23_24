@@ -1,0 +1,3 @@
+<template>
+    Done component
+</template>

@@ -1,0 +1,3 @@
+<template>
+    Task component
+</template>

@@ -1,25 +1,61 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+//import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { reactive } from 'vue';
+interface Post {
+  id: number,
+  userId: number,
+  title: string,
+  body: string
+}
+
+let posts = reactive(new Array<Post>());
+
+
+function get() {
+  fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(res => res.json())
+    .then(data => {
+      console.log(`data from posts ${data}`);
+      posts.push(...data);
+      // posts = data;
+    })
+}
+
+get();
+
+
+
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <table>
+      <thead>
+        <tr>
+          <td>USERId</td>
+          <td>ID</td>
+          <td>TITLE</td>
+          <td>BODY</td>
+          <td>BODY SIZE</td>
+        </tr>
+      </thead>
+      <tbody>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/users">User List</RouterLink>
-        <RouterLink to="/todo">To do list</RouterLink>
-      </nav>
-    </div>
+        <tr v-for="post in posts">
+          <template v-if="post.body.length < 150">
+            <td>{{ post.userId }}</td>
+            <td>{{ post.id }}</td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.body }}</td>
+            <td>{{ post.body.length }}</td>
+          </template>
+        </tr>
+      </tbody>
+    </table>
   </header>
-
-  <RouterView />
 </template>
 
 <style scoped>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+</style>
+<body>
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        //ctx.fillStyle = "black";
+        ctx.font = "30px 'Bebas neue'";
+        ctx.fillText("Hola Clase!!", 160, 80);    
+    </script>
+</body>
+
+</html>
