@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PizzaExample.Data;
 
@@ -11,9 +12,10 @@ using PizzaExample.Data;
 namespace PizzaExample.Data.Migrations
 {
     [DbContext(typeof(PizzaContext))]
-    partial class PizzaContextModelSnapshot : ModelSnapshot
+    [Migration("20240214195915_PizzaIngrediente_14-02-24_v2")]
+    partial class PizzaIngrediente_140224_v2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,6 +44,9 @@ namespace PizzaExample.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("PizzaId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Ingredients");
@@ -52,28 +57,32 @@ namespace PizzaExample.Data.Migrations
                             Id = 1,
                             Calorias = 34,
                             Name = "Peperoni",
-                            Origen = "Animal"
+                            Origen = "Animal",
+                            PizzaId = 1
                         },
                         new
                         {
                             Id = 2,
                             Calorias = 56,
                             Name = "Queso",
-                            Origen = "Animal"
+                            Origen = "Animal",
+                            PizzaId = 2
                         },
                         new
                         {
                             Id = 3,
                             Calorias = 27,
                             Name = "Jamon",
-                            Origen = "Animal"
+                            Origen = "Animal",
+                            PizzaId = 2
                         },
                         new
                         {
                             Id = 4,
                             Calorias = 4,
                             Name = "Oregano",
-                            Origen = "Vegetal"
+                            Origen = "Vegetal",
+                            PizzaId = 1
                         });
                 });
 

@@ -21,7 +21,23 @@ namespace PizzaExample.Data
 
         public List<Pizza> GetAll()
         {
-             return _context.Pizzas.ToList();
+            var pizzas = _context.Pizzas
+                .Include(p => p.PizzaIngredientes)
+                .ThenInclude(pi => pi.Ingrediente)
+                .ToList();
+
+            var pizzasDto = pizzas.Select(p => new PizzaDto
+            {
+                PizzaId = p.PizzaId,
+                Nombre = p.Nombre,
+                Ingredientes = p.PizzaIngredientes.Select(pi => new IngredienteDto
+                {
+                    IngredienteId = pi.Ingrediente.IngredienteId,
+                    Nombre = pi.Ingrediente.Nombre
+                }).ToList()
+            }).ToList();
+
+            return pizzasDto;
         }
 
         public void Add(Pizza pizza)
@@ -44,7 +60,8 @@ namespace PizzaExample.Data
         public void Delete(int id)
         {
             var pizza = Get(id);
-            if (pizza is null) {
+            if (pizza is null)
+            {
                 throw new KeyNotFoundException("Pizza not found.");
             }
             _context.Pizzas.Remove(pizza);

@@ -11,8 +11,7 @@ public class Pizza
     [Required]
     public bool IsGlutenFree { get; set; }
     [Required]
-    public List<Ingrediente> Ingredientes { get; set; } = new List<Ingrediente>();
-
+    public List<PizzaIngrediente> PizzaIngredientes { get; set; }
     public static int pizzaSeed = 1;
 
     public Pizza(){}
