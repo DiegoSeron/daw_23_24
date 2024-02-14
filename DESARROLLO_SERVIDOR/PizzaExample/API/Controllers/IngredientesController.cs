@@ -8,8 +8,8 @@ namespace PizzaExample.Controllers;
 [Route("[controller]")]
 public class IngredientesController : ControllerBase
 {
-    private readonly IngredienteService _ingredienteService;
-    public IngredientesController(IngredienteService ingredienteService)
+    private readonly IIngredienteService _ingredienteService;
+    public IngredientesController(IIngredienteService ingredienteService)
     {
         _ingredienteService = ingredienteService;
     }
@@ -17,6 +17,9 @@ public class IngredientesController : ControllerBase
     [HttpGet]
     public ActionResult<List<Ingrediente>> GetAll() =>
     _ingredienteService.GetAll();
+
+
+
 
     [HttpGet("{id}")]
     public ActionResult<Ingrediente> Get(int id)
@@ -29,12 +32,21 @@ public class IngredientesController : ControllerBase
         return ingrediente;
     }
 
+
+
+
+
     [HttpPost]
     public IActionResult Create(Ingrediente ingrediente)
     {
         _ingredienteService.Add(ingrediente);
         return CreatedAtAction(nameof(Get), new { id = ingrediente.Id }, ingrediente);
     }
+
+
+
+
+
     [HttpPut("{id}")]
     public IActionResult Update(int id, Ingrediente ingrediente)
     {
@@ -49,6 +61,10 @@ public class IngredientesController : ControllerBase
 
         return NoContent();
     }
+
+
+
+
 
     [HttpDelete("{id}")]
     public IActionResult Delete(int id)

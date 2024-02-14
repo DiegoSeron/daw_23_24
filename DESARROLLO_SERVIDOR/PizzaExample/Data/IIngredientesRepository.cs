@@ -11,7 +11,7 @@ namespace PizzaExample.Data
         void Delete(int id);
 
         // List<Ingrediente> GetIngredientesByPizzaId(int pizzaId);
-        void AddIngredienteToPizza(Ingrediente ingrediente, int pizzaId);
-        void UpdateIngredientesForPizza(List<Ingrediente> ingredientes, int pizzaId);
+        // void AddIngredienteToPizza(Ingrediente ingrediente, int pizzaId);
+        // void UpdateIngredientesForPizza(List<Ingrediente> ingredientes, int pizzaId);
     }
 }

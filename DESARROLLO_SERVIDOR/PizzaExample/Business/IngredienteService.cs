@@ -5,7 +5,7 @@ using PizzaExample.Data;
 
 namespace PizzaExample.Business
 {
-    public class IngredienteService
+    public class IngredienteService : IIngredienteService
     {
 
         private readonly IIngredientesRepository _ingredienteRepository;

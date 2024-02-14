@@ -21,33 +21,7 @@ namespace PizzaExample.Data
 
         public List<Pizza> GetAll()
         {
-            List<Pizza> pizzas = new List<Pizza>();
-
-            // using (var connection = new SqlConnection(_connectionString))
-            // {
-
-            //     connection.Open();
-
-            //     var sqlString = "SELECT idPizza, name, isGlutenFree FROM PIZZA";
-            //     var command = new SqlCommand(sqlString, connection);
-
-            //     using (var reader = command.ExecuteReader())
-            //     {
-            //         while (reader.Read())
-            //         {
-            //             var pizza = new Pizza
-            //             {
-            //                 Id = Convert.ToInt32(reader["idPizza"]),
-            //                 Name = reader["name"].ToString(),
-            //                 IsGlutenFree = Convert.ToBoolean(reader["isGlutenFree"])
-            //             };
-            //             pizzas.Add(pizza);
-            //         }
-            //     }
-            // }
-
-            
-             return pizzas;
+             return _context.Pizzas.ToList();
         }
 
         public void Add(Pizza pizza)

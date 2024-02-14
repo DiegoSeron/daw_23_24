@@ -1,6 +1,7 @@
 using PizzaExample.Models;
 using PizzaExample.Business;
 using Microsoft.AspNetCore.Mvc;
+using PizzaExample.Data;
 
 namespace PizzaExample.Controllers;
 
@@ -8,9 +9,8 @@ namespace PizzaExample.Controllers;
 [Route("[controller]")]
 public class PizzaController : ControllerBase
 {
-    // private readonly ILogger<BankAccountController> _logger;
-    private readonly PizzaService _pizzaService;
-    public PizzaController(PizzaService pizzaService)
+    private readonly IPizzaService _pizzaService;
+    public PizzaController(IPizzaService pizzaService)
     {
         _pizzaService = pizzaService;
     }
@@ -19,16 +19,23 @@ public class PizzaController : ControllerBase
     public ActionResult<List<Pizza>> GetAll() =>
     _pizzaService.GetAll();
 
-    [HttpGet("{id}")]
+
+
+    [HttpGet]
+    [Route("id")]
     public ActionResult<Pizza> Get(int id)
     {
         var pizza = _pizzaService.Get(id);
 
-        if (pizza == null)
+        if (pizza == null){
             return NotFound();
-
-        return pizza;
+        }else{
+            return pizza;
+        }
     }
+
+
+
 
     [HttpPost]
     public IActionResult Create(Pizza pizza)
@@ -36,6 +43,10 @@ public class PizzaController : ControllerBase
         _pizzaService.Add(pizza);
         return CreatedAtAction(nameof(Get), new { id = pizza.Id }, pizza);
     }
+
+
+
+
     [HttpPut("{id}")]
     public IActionResult Update(int id, Pizza pizza)
     {
@@ -50,6 +61,9 @@ public class PizzaController : ControllerBase
 
         return NoContent();
     }
+
+
+
 
     [HttpDelete("{id}")]
     public IActionResult Delete(int id)
