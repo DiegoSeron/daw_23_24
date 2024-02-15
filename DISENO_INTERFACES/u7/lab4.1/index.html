@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg id="svgPath">
+        <path d="M10,30
+                L75,10
+                L75,75
+                L50,75
+                L60,60
+                Z" style="stroke:purple; fill:none;" />
+            <text x="130" y="50" id="animate">
+                ¡Anima!
+            </text>
+    </svg>
+    
+    <script>
+        var anim=document.getElementById("animate");
+    
+    anim.onclick=function() {
+        var pathPink=document.querySelector('path');
+        var length=pathPink.getTotalLength();
+        pathPink.style.animationName="dash"
+        pathPink.style.strokeDasharray = length;
+        pathPink.style.strokeDashoffset = length;
+        pathPink.style.strokeWidth = "3px";
+        pathPink.style.animationDuration = "4s";
+        pathPink.style.animationIterationCount = "infinite";
+    }
+    
+    </script>
+</body>
+
+</html>
+
+<style>
+    @keyframes dash {
+        from {stroke-dashoffset: 235;}
+        to {stroke-dashoffset: 0;}
+    }
+</style>
+
